@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/7.0.0/mark.min.js"></script>
+  <body>
+    <div>Hello there, this is a test </div>
+  </body>
+
+  <script type="text/javascript">
+    var brands =   [ "Hello", "test" ];
+
+    var instance = new Mark(document.querySelector("body"));
+
+    instance.mark(brands, {
+        accuracy: {
+          value: "exactly",
+          limiters: [".", ",", "!"]
+        }
+    });
+  </script>
+</html>
